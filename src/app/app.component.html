@@ -1,0 +1,9 @@
+<div class='container'>
+    <app-control (rcolorCreated)="onRedColorAdded($event)" (bcolorCreated)="onBlueColorAdded($event)"></app-control>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <app-color-elements *ngFor="let colorElement of colorElements" [clrElement]='colorElement'></app-color-elements>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <p>Add Red Color Text or Blue Color!</p>
+            <label>Color Text</label>
+            <input type="text" class="form-control" #colorNameInput>
+            <!-- <input type="text" class="form-control" [(ngModel)]="newColorTextName"> -->
+            <label>Description</label>
+            <input type="text" class="form-control" #colorContentInput>
+            <!-- <input type="text" class="form-control" [(ngModel)]="newColorContent"> -->
+            <br>
+            <button class="btn btn-primary" (click)="onAddRedColor(colorNameInput)">Add Red Color</button>
+            <button class="btn btn-primary" (click)="onAddBlueColor(colorNameInput)">Add Blue Color</button>
+        </div>
+    </div>
